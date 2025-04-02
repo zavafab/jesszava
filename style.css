@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f88484;
+    color: rgb(180, 3, 3);
+}
+
+/* Encabezado */
+header {
+    background-color: rgb(238, 228, 228);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.intro {
+    text-align: center;
+    padding: 50px;
+}
+
+.content {
+    background-color: #070707;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.car-image {
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #c00;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+

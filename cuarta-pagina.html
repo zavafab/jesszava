@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilotos de Ferrari en la Fórmula 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            background-color: #d40000;
+            color: white;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .carousel {
+            width: 90%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .carousel a {
+            flex: 0 1 calc(33.33% - 10px);
+            display: flex;
+            justify-content: center;
+        }
+        .carousel img {
+            width: 100%;
+            max-width: 180px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .carousel img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body onclick="PlayAudio()">
+    <header>
+        <h1>Pilotos de Ferrari en la Fórmula 1</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Primeros años</a></li>
+                <li><a href="Segunda-pagina.html">Ferrari y la Fórmula 1</a></li>
+                <li><a href="cuarta-pagina.html">Pilotos de Ferrari</a></li>
+                <li><a href="Tercer-pagina.html">Fundador de Ferrari</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carousel">
+        <a href="quinta-pagina.html"><img src="img/descarga0.jpeg" alt="Imagen 1"></a>
+        <a href="sexta-pagina.html"><img src="img/descarga-1.jpeg" alt="Imagen 2"></a>
+        <a href="septima.html"><img src="img/descarga-2.jpeg" alt="Imagen 3"></a>
+        <a href="octava.html"><img src="img/descarga-3.jpeg" alt="Imagen 4"></a>
+        <a href="novena.html"><img src="img/descarga-4.jpeg" alt="Imagen 5"></a>
+        <a href="decimo.html"><img src="img/descarga-5.jpeg" alt="Imagen 6"></a>
+        <a href="undecima.html"><img src="img/miamor.png" alt="Imagen 7"></a>
+        <a href="duodecima.html"><img src="img/smooth operation.jpeg" alt="Imagen 8"></a>
+        <a href="lewis.html"><img src="img/lewis.png" alt="Imagen 9"></a>
+    </div>
+    <audio id="musica" autoplay controls loop>
+        <source src="audio/hay un color.mp3"type=audio/mpeg>
+    </audio>
+    <section>
+        <script>
+            function PlayAudio(){
+                document.getElementById("musica").play();
+            }
+        </script>
+</body>
+</html>
+
